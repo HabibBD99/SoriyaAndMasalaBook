@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Masala Book</title>
+
+	<style type="text/css">
+		
+  *{
+margin: 0;
+padding: 0;
+
+
+  }
+
+  body{
+background-color: violet;
+
+
+  }
+
+ .Card{
+
+height: 570px;
+width: 90%;
+background-color:green;
+margin-left: 5%;
+margin-top: 20px;
+border: 2px solid green;
+border-radius: 3px ;
+box-shadow: 2px 2px 4px 0px black;
+
+
+  }
+
+  .Head_line{
+  position: relative;
+  height: 30px;
+  width: 90%;
+  background-color: chocolate;
+  left: 5%;
+  top: 15px;
+  border: 2px solid   chocolate;
+  border-radius: 3px ;
+  box-shadow: 1px 1px 6px 0px black;
+
+  }
+
+ .Page_headline{
+
+ position: relative;
+ height: 25px;
+ width: 90%;
+ left: 5%;
+ top: 10px;
+ background-color: chocolate;
+ border: 2px solid   chocolate;
+ border-radius: 3px ;
+ box-shadow: 1px 1px 3px 0px black;
+ text-align: center;
+ font-weight: bold;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ color:indigo;
+ word-spacing: 5px;
+ 
+
+
+  }
+
+
+
+ .H2{
+  position: relative;
+  text-align: center;
+  top: 1px;
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+
+  }
+
+
+
+  .Go{
+
+position: relative;
+left: 5%;
+bottom: 22px;
+color: black;
+background-color: yellow;
+padding: 1px;
+border-radius: 45%;
+border: 1px solid yellow;
+box-shadow: 1px 1px 5px black;
+font-weight: bold;
+text-decoration: none;
+cursor: pointer;
+
+
+  }
+
+
+.Exit{
+
+position: relative;
+left: 90%;
+bottom: 22px;
+color: black;
+background-color: yellow;
+padding: 1px;
+border-radius: 45%;
+border: 1px solid yellow;
+box-shadow: 1px 1px 5px black;
+font-weight: bold;
+text-decoration: none;
+cursor: pointer;
+
+
+ }
+
+
+
+ @media screen and (max-width:780px){
+
+.Exit{
+position: relative;
+left: 80%;
+top: -22px;
+color: black;
+background-color: yellow;
+padding: 1px;
+border-radius: 45%;
+border: 1px solid yellow;
+box-shadow: 1px 1px 5px black;
+text-align: center;
+font-weight: bold;
+text-decoration: none;
+
+}
+
+
+
+ }
+
+
+
+
+ .Next{
+ position: relative;
+ color:blue;
+ float: right;
+ padding: 3px;
+ font-weight: normal;
+
+   }
+
+
+
+ .Prev{
+  position: relative;
+  color:blue;
+  float: left;
+  padding: 3px;
+  font-weight: normal;
+
+   }
+
+
+.Content_line{
+
+ position: relative;
+ height: 430px;
+ width: 90%;
+ left: 5%;
+ background-color: chocolate;
+ top: 35px;
+ border: 2px solid chocolate;
+ border-radius: 3px ;
+ padding-bottom: 20px;
+ box-shadow: 1px 1px 8px 0px black;
+ box-sizing: border-box;
+
+
+  }
+
+  .TextContent{
+
+
+  height: 340px;
+  width: 90%;
+  left: 5%;
+  background-color: chocolate;
+  top: 35px; 
+  position: relative;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  line-height: 40px;
+  overflow: auto;
+  border: 2px solid chocolate;
+  border-radius: 3px ;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 8px 0px black;
+  box-sizing: border-box;
+
+   }
+
+
+
+.Content{
+
+ height: 30px;
+ width: 80%;
+ background-color: gray;
+ border: 2px solid gray;
+ border-radius: 3px ;
+ box-shadow: 2px 1px 6px 0px black;
+ text-align: center;
+ margin-top: 20px;
+ margin-left: 10%;
+
+
+ }
+
+
+.A{
+
+  position: relative;
+  top: 5px;
+  text-align: center;
+  text-decoration: none; 
+  color: yellow;
+  font-weight: bold;
+
+  }
+
+
+.Footer_line{
+
+ position: relative;
+ height: 30px;
+ width: 90%;
+ background-color: chocolate;
+ left: 5%;
+ top: 52px;
+ border: 2px solid chocolate;
+ border-radius: 3px ;
+ box-shadow: 2px 1px 8px 0px black;
+	
+  }
+
+
+
+
+ ul li{
+ list-style: none;
+
+  }
+
+.About{
+ position: relative;
+ text-decoration: none;
+ right: -38%;
+ top: 5px;
+ color: black;
+ font-weight: bold;
+ 
+
+  }
+
+ .Author{
+
+ position: relative;
+ text-decoration: none;
+ left: 88%;
+ top: 5px;
+ color: black;
+ font-weight: bold;
+
+   }
+
+
+
+.Home{
+ position: relative;
+ text-decoration: none;
+ left: 3%; 
+ top: 5px;
+ color: black;
+ font-weight: bold;
+
+
+ }
+ 
+
+
+ ul li{
+ list-style: none;
+
+  }
+
+@media screen and (max-width:780px){
+
+.About{
+ position: relative;
+ text-decoration: none;
+ right: -22%;
+ top: 5px;
+ color: black;
+ font-weight: bold;
+
+}
+
+ .Author{
+
+ position: relative;
+ text-decoration: none;
+ left: 80%;
+ top: 5px;
+ color: black;
+ font-weight: bold;
+
+   }
+
+.Home{
+ position: relative;
+ text-decoration: none;
+ left: -1%; 
+ top: 5px;
+ color: black;
+ font-weight: bold;
+
+
+ }
+ 
+
+  }
+
+
+
+
+   
+
+</style>
+
+<script type="text/javascript">
+
+
+  function Exit(){
+  
+  if(confirm("Are you want to sure Exit.")){
+  
+  window.close();
+  
+  }
+  
+    }
+  
+ document.addEventListener("contextmenu",function(event){
+ event.preventDefault();
+
+  });
+
+  </script>
+
+</head>
+<body>
+
+<div class="Card">
+	
+
+
+
+  <div class="Head_line">
+    <h2 class="H2">Masala & Soriya Book</h2>
+    <a href="BookPage.html" class="Go" target="_blank">Go</a>
+    <a href="../MasalaBook.html" class="Exit" onclick="Exit();">Exit</a> 
+  </div>
+  
+
+
+
+
+
+  
+  
+<div class="Content_line">
+  <div class="Page_headline">
+    <a href="BookPage.html" target="_blank" class="Prev">Prev</a>  ...Book Page Part 1....  <a href="BookPage3.html" target="_blank" class="Next">Next</a>
+  </div>
+
+
+
+
+
+<div class="TextContent">
+
+
+<h5>Masala By </h5>
+
+   Lorem ipsum dolor
+   sit amet consectetur adipisicing elit.
+   Ducimus, voluptatem voluptatum doloribus 
+   explicabo ullam excepturi culpa architecto accusantium 
+   unde temporibus molestias, tenetur
+   placeat officia blanditiis ipsam. Mollitia id in eos.
+
+   Lorem ipsum dolor
+   sit amet consectetur adipisicing elit.
+   Ducimus, voluptatem voluptatum doloribus 
+   explicabo ullam excepturi culpa architecto accusantium 
+   unde temporibus molestias, tenetur
+   placeat officia blanditiis ipsam. Mollitia id in eos.
+
+   Lorem ipsum dolor
+   sit amet consectetur adipisicing elit.
+   Ducimus, voluptatem voluptatum doloribus 
+   explicabo ullam excepturi culpa architecto accusantium 
+   unde temporibus molestias, tenetur
+   placeat officia blanditiis ipsam. Mollitia id in eos.
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="Footer_line">
+<a href="SoriyaBookAuthor.html" class="Author" target="_blank">Author</a>	
+<a href="SoriyaBookHome.html" class="Home" target="_blank">Home</a>
+<a href="SoriyaBookAbout.html" class="About" target="_blank">About</a>
+</div>
+
+
+
+
+
+</div>
+
+</body>
+</html>
