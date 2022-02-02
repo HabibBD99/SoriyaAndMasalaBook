@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protect</title>
+
+  <style>
+
+  *{
+  margin: 0;
+  padding: 0;
+
+  }
+
+ body{
+
+ background-color: violet;
+
+  }
+
+ .Form{
+ height: 400px;
+ width: 400px;
+ background-color:rgb(128, 0, 107);
+ margin: 80px auto;
+ border-radius: 5px;
+ border: 1px solid  rgb(128, 0, 107);
+ box-sizing: border-box;
+ box-shadow: 1px 1px 5px  0px black;
+ 
+  }
+
+ .Table{
+  position: relative;
+  top: 160px;
+  left: 70px;
+  font-weight: bolder;
+
+
+  }
+
+  input[type="text"]{
+  height: 16px;
+  width: 152px;
+
+  }
+
+   input[type="password"]{
+   height: 16px;
+   width: 155px;
+
+   }
+
+
+
+ input[type="submit"]{
+ background-color: rgb(77, 114, 13);
+ color: darkorange;
+ padding: 2px;
+ border-radius: 2px;
+ border: 2px solid grey;
+ font-weight: bold;
+ cursor: pointer;
+
+ }
+
+
+  </style>
+
+
+</head>
+<body>
+    
+
+<form method="" class="Form" onsubmit="return SecurityPassword();" action="MasalaBook.html">
+
+<table class="Table">
+<tr>
+    <td>Username: <input type="text" name="Text" id="Text"></td>
+    
+</tr>
+
+   <tr>
+ <td> </td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+  </tr>
+    
+
+<tr>
+    <td>Password: <input type="password" name="Password" id="Password"></td>
+</tr>
+
+  <tr>
+  <td> </td>
+  </tr>
+
+<tr>
+    <td><input type="submit" name="submit" value="Submit"></td>
+</tr>
+</table>
+
+</form>
+
+
+<script>
+
+ function SecurityPassword(){
+    var Password = "SoriyaBook123"
+    var ChackedPassword = document.getElementById("Password").value;
+    var Username = document.getElementById("Text").value;
+
+    if(Username |= ChackedPassword == ""){
+      alert("Field Is Empty.")
+
+     }
+
+
+   if(ChackedPassword != Password){
+   alert("Password does not match.")
+   return false;
+
+   }
+
+   if(ChackedPassword == Password){
+     return confirm("Password Is Successfully Match ...Are You Ok...");
+    
+
+     }
+
+
+
+
+  }
+
+
+</script>
+
+</body>
+</html>
